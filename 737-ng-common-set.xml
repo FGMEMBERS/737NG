@@ -91,10 +91,18 @@
               <script>aircraft.livery.dialog.toggle()</script>
             </binding>
           </item>
+          <item>
+              <label>Show/Hide Yokes</label>
+              <binding>
+                  <command>property-toggle</command>
+                  <property>sim/yokes-visible</property>
+              </binding>
+          </item>
         </menu>
       </default>
     </menubar>
     <checklists include="737ng-checklist.xml"/>
+    <yokes-visible type="bool">1</yokes-visible>
   </sim>
   <consumables>
     <fuel>
@@ -190,6 +198,7 @@
       <switch-position>1</switch-position>
     </dme>
   </instrumentation>
+  <input include="keybindings.xml" n="0"></input>
   <systems>
     <autoflight>
       <serviceable type="bool">true</serviceable>

@@ -1950,6 +1950,71 @@
    	</axis>
  	</animation>  
     
+  <animation>
+      <type>select</type>
+      <object-name>yoke1</object-name>
+      <object-name>yoke1.001</object-name>
+      <object-name>colum</object-name>
+      <object-name>colum.002</object-name>
+      <condition>
+          <property>sim/yokes-visible</property>
+      </condition>
+  </animation>
+
+  <animation>
+      <type>rotate</type>
+      <object-name>yoke1</object-name>
+      <object-name>yoke1.001</object-name>
+      <object-name>colum</object-name>
+      <object-name>colum.002</object-name>
+      <property>controls/flight/elevator</property>
+      <factor>15</factor>
+      <center>
+          <x-m>0.725</x-m>
+          <y-m>0</y-m>
+          <z-m>0.1</z-m>
+      </center>
+      <axis>
+          <x>0</x>
+          <y>-1</y>
+          <z>0</z>
+      </axis>
+  </animation>
+
+  <animation>
+      <type>rotate</type>
+      <object-name>yoke1</object-name>
+      <property>controls/flight/aileron</property>
+      <factor>30</factor>
+      <center>
+          <x-m>1.0</x-m>
+          <y-m>-0.535</y-m>
+          <z-m>0.854</z-m>
+      </center>
+      <axis>
+          <x>-1</x>
+          <y>0</y>
+          <z>0</z>
+      </axis>
+  </animation>
+
+  <animation>
+      <type>rotate</type>
+      <object-name>yoke1.001</object-name>
+      <property>controls/flight/aileron</property>
+      <factor>30</factor>
+      <center>
+          <x-m>1.0</x-m>
+          <y-m>0.497</y-m>
+          <z-m>0.854</z-m>
+      </center>
+      <axis>
+          <x>-1</x>
+          <y>0</y>
+          <z>0</z>
+      </axis>
+  </animation>
+  
 </PropertyList>
    
    
