@@ -116,7 +116,7 @@ var AFDS = {
 
     ap_update : func{
         var VS =getprop("velocities/vertical-speed-fps");
-        var TAS =getprop("velocities/uBody-fps");
+        var TAS =getprop("instrumentation/airspeed-indicator/true-speed-kt") * KT2FPS;
         if(TAS == 0.000)TAS=0.001;
         var FPangle = math.asin(VS/TAS) * 90;
         setprop("autopilot/internal/fpa",FPangle);
