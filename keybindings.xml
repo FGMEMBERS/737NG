@@ -57,8 +57,8 @@
                     <script>B737.afds.input(0,1);</script>
                 </binding>
             </key>
-            <key n="9">
-                <name>Ctrl-I</name>
+            <key n="61">
+                <name>=</name>
                 <desc>toggle auto spoilers</desc>
                 <binding>
                     <command>nasal</command>
