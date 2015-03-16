@@ -4,7 +4,8 @@
 	<sim>
 		<description>Boeing 737-600</description>
 	    <liveries-path type="string">Models/Liveries-600</liveries-path>
-        
+        <exclude-from-gui type="bool">false</exclude-from-gui>
+        <variant-of>737-800</variant-of>
 		<aero>738</aero>
     <startup>
       <splash-texture>splash-600.png</splash-texture>
