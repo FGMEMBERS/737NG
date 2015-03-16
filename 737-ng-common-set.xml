@@ -16,6 +16,9 @@
     <sound>
       <path>Sounds/737-sound.xml</path>
     </sound>
+    
+    <exclude-from-gui type="bool">true</exclude-from-gui>
+    
     <virtual-cockpit archive="y">true</virtual-cockpit>
     <allow-toggle-cockpit archive="y">false</allow-toggle-cockpit>
     <model>
