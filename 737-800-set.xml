@@ -1,31 +1,47 @@
 <?xml version="1.0"?>
 <PropertyList include="737-ng-common-set.xml">
 
-	<sim>
-		<description>Boeing 737-800</description>
-	    <liveries-path type="string">Models/Liveries-800</liveries-path>
+  <sim>
+    <description>Boeing 737-800</description>
+
+     <tags>
+      <tag>boeing</tag>
+      <tag>low-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>twin-engine</tag>
+      <tag>jet</tag>
+      <tag>transport</tag>
+      <tag>1990s</tag>
+      <tag>2000s</tag>
+      <tag>2010s</tag>
+      <tag>ifr</tag>
+      <tag>glass-cockpit</tag>
+    </tags>
+
+      <liveries-path type="string">Models/Liveries-800</liveries-path>
         <exclude-from-gui type="bool">false</exclude-from-gui>
-		<aero>738</aero>
+    <aero>738</aero>
     <startup>
       <splash-texture>splash-800.png</splash-texture>
     </startup>
      
-		<model>
-			<path>Models/738.xml</path>                     
-		</model>    
+    <model>
+      <path>Models/738.xml</path>                     
+    </model>    
                 
-		<view>
-			<internal archive="y">true</internal>
-			<config>
-				<!-- x/y/z == right/up/back --> 
-				<x-offset-m archive="y">-0.4</x-offset-m>
-				<y-offset-m archive="y">1.43</y-offset-m>
-				<z-offset-m archive="y">-17.18</z-offset-m>
-				<pitch-offset-deg archive="y">-8.0</pitch-offset-deg>
-			</config>
-		</view>
+    <view>
+      <internal archive="y">true</internal>
+      <config>
+        <!-- x/y/z == right/up/back --> 
+        <x-offset-m archive="y">-0.4</x-offset-m>
+        <y-offset-m archive="y">1.43</y-offset-m>
+        <z-offset-m archive="y">-17.18</z-offset-m>
+        <pitch-offset-deg archive="y">-8.0</pitch-offset-deg>
+      </config>
+    </view>
                  
-	</sim>
+  </sim>
 
 </PropertyList>
 
