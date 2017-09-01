@@ -26,7 +26,7 @@
     </startup>
      
     <model>
-      <path>Models/737-700.xml</path>                     
+      <path>Aircraft/737NG/Models/737-700.xml</path>                     
     </model>    
                 
     <view n="0">
