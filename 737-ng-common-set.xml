@@ -105,6 +105,11 @@
         </menu>
       </default>
     </menubar>
+    <multiplay>
+      <generic>
+        <string n="0" alias="/sim/liveries-path"/>
+      </generic>
+    </multiplay>
     <checklists include="737ng-checklist.xml"/>
     <yokes-visible type="bool">1</yokes-visible>
   </sim>

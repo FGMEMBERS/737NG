@@ -3,7 +3,7 @@
 #
 
 
-aircraft.livery.init("Aircraft/737NG/" ~ getprop("/sim/liveries-path")); 
+aircraft.livery.init(getprop("/sim/liveries-path")); 
 
 var SndOut = props.globals.getNode("/sim/sound/Ovolume",1);
 var FHmeter = aircraft.timer.new("/instrumentation/clock/flight-meter-sec", 10).stop();
