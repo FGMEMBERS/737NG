@@ -17,22 +17,6 @@
                     <property>controls/engines/engine[1]/reverser</property>
                 </binding>
             </key>
-            <key n="267">
-                <name>F11</name>
-                <desc>Pop up autopilot dialog</desc>
-                <binding>
-                    <command>nasal</command>
-                    <script>dialogs.ap_settings.toggle()</script>
-                </binding>
-            </key>
-            <key n="268">
-                <name>F12</name>
-                <desc>Radio Stack</desc>
-                <binding>
-                    <command>nasal</command>
-                    <script>dialogs.Radio.open()</script>
-                </binding>
-            </key>
             <key n="1">
                 <name>Ctrl-A</name>
                 <desc>enter altitude hold mode</desc>

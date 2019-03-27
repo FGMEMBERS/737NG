@@ -313,8 +313,10 @@ setlistener("/autopilot/route-manager/route/num", func(wp)
 {
     if (wp == nil) return;
 
-    var wpt= wp.getValue() -1;
-    
+    var wpt = wp.getValue();
+    if (wpt == nil) return;
+    wpt -= 1;
+
     if(wpt>-1){
         setprop("instrumentation/groundradar/id",getprop("autopilot/route-manager/route/wp["~wpt~"]/id"));
     }else{
