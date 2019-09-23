@@ -3,7 +3,7 @@
 #
 
 
-aircraft.livery.init("Aircraft/737NG/" ~ getprop("/sim/liveries-path")); 
+aircraft.livery.init(getprop("/sim/liveries-path")); 
 
 var SndOut = props.globals.getNode("/sim/sound/Ovolume",1);
 var FHmeter = aircraft.timer.new("/instrumentation/clock/flight-meter-sec", 10).stop();
@@ -313,8 +313,10 @@ setlistener("/autopilot/route-manager/route/num", func(wp)
 {
     if (wp == nil) return;
 
-    var wpt= wp.getValue() -1;
-    
+    var wpt = wp.getValue();
+    if (wpt == nil) return;
+    wpt -= 1;
+
     if(wpt>-1){
         setprop("instrumentation/groundradar/id",getprop("autopilot/route-manager/route/wp["~wpt~"]/id"));
     }else{

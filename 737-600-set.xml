@@ -3,8 +3,8 @@
 
   <sim>
     <description>Boeing 737-600</description>
-      <liveries-path type="string">Models/Liveries-600</liveries-path>
- <tags>
+    <liveries-path type="string">Aircraft/737NG/Models/Liveries-600</liveries-path>
+    <tags>
       <tag>boeing</tag>
       <tag>low-wing</tag>
       <tag>tricycle</tag>
@@ -19,32 +19,28 @@
       <tag>glass-cockpit</tag>
     </tags>
 
-        <exclude-from-gui type="bool">false</exclude-from-gui>
-        <variant-of>737-800</variant-of>
+    <exclude-from-gui type="bool">false</exclude-from-gui>
+    <variant-of>737-800</variant-of>
     <aero>738</aero>
     <startup>
       <splash-texture>splash-600.png</splash-texture>
     </startup>
-     
+
     <model>
-      <path>Models/736.xml</path>                     
-    </model>    
-                
+      <path>Aircraft/737NG/Models/736.xml</path>
+      <fallback-model-index type="int">204</fallback-model-index>
+    </model>
+
     <view n="0">
       <internal archive="y">true</internal>
       <config>
-        <!-- x/y/z == right/up/back --> 
+        <!-- x/y/z == right/up/back -->
         <x-offset-m archive="y">-0.4</x-offset-m>
         <y-offset-m archive="y">1.51</y-offset-m>
         <z-offset-m archive="y">-13.64</z-offset-m>
         <pitch-offset-deg archive="y">-8.0</pitch-offset-deg>
       </config>
     </view>
-                 
   </sim>
 
 </PropertyList>
-
-
-
-
